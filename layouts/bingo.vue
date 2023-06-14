@@ -1,17 +1,17 @@
 <template>
     <div>
-        <header>
-            <nav>
-                <NuxtLink to="/bingo">Bingo Games</NuxtLink>
+        <header class="shadow-sm bg-white">
+            <nav class="container mx-auto p-4">
+                <NuxtLink to="/bingo" class="font-bold">Bingo Games</NuxtLink>
             </nav>
         </header>
 
-        <div>
+        <div class="container mx-auto">
             <slot />
         </div>
 
-        <footer>
-            <ul>
+        <footer class="container mx-auto p-4 flex justify-between border-t-2">
+            <ul class="flex gap-4">
                 <li><NuxtLink to="/">Home</NuxtLink></li>
                 <li><NuxtLink to="/about">About</NuxtLink></li>
                 <li><NuxtLink to="/bingo/test">Bingo</NuxtLink></li>
